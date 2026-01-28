@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-color: rgb(218, 110, 192);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+}
+
+input, select, button{
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    padding: 4px 4px;
+    font-family: 'Lucida Sans'
+    
+    
+}

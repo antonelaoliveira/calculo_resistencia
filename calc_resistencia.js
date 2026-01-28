@@ -19,15 +19,16 @@ function verTipoMaterial(mat){
     }
 }
 
-function principal(){
-    let material = 'cobre'  //aluminio e cobre
+let resposta = document.getElementById('resposta')
+let calcular = document.getElementById('calcular')
+
+calcular.addEventListener('click', ()=>{  //função principal
+    let material = document.getElementById('material').value
 
     let resistencia = 0.0
 
-    let comprimento = 1000
-    let area = 6.0
-
-    let resposta = ''
+    let comprimento = Number(document.getElementById('comprimento').value)
+    let area =  Number(document.getElementById('area').value)
 
     let mat = verTipoMaterial(material)
     console.log(mat)
@@ -35,7 +36,14 @@ function principal(){
     resistencia =calcularResistencia(comprimento, area, mat)
     console.log(`A resistência do condutor é ${resistencia.toFixed(3)}  Ω`)
 
+    resposta.innerHTML = ''
+    resposta.innerHTML += `A resistência do condutor é ${resistencia.toFixed(3)}  Ω`
+    resposta.style.fontFamily = 'Verdana'
+    resposta.style.fontSize = '2rem'
+    resposta.style.fontWeight = 'bold'
 
-}
+    resposta.innerHTML += '<hr>'
 
-principal()
+})
+
+

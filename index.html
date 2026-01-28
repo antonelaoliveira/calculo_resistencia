@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./calc_resistencia.js"defer></script>
+    <title>Cálculo de Resistência</title>
+</head>
+<body>
+    <header> 
+        <h1>Programa para calcular a resistência de um fio condutor</h1>
+    </header>
+    <main>
+        <label for="comprimento">Digite o comprimento do condutor:</label><br>
+        <input type="text" id="comprimento" placeholder="valor em metros"> <br><br>
+
+        <label for="area">Digite a área da seção transversal do condutor:</label><br>
+        <input type="text" id="area" placeholder="valor em mm"> <br><br>
+
+        <label for="material">Selecione o material do condutor:</label><br>
+        <select name="" id="material">
+            <option value="cobre">Material cobre</option>
+            <option value="aluminio">Material alumínio</option>
+        </select>
+        <br><br>
+        <button id="calcular"> Calcular </button>
+        <hr>
+        <div id="resposta"></div>
+    </main>
+    <footer>
+        by Antonela &copy; &trade; 
+    </footer>
+</body>
+</html>
